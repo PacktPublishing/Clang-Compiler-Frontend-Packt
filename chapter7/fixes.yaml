@@ -1,0 +1,38 @@
+---
+MainSourceFile:  '/home/ivanmurashko/works/myown/clangbook/./src/part2/ch7/TestClassSmall.cpp'
+Diagnostics:
+  - DiagnosticName:  misc-methodrename
+    DiagnosticMessage:
+      Message:         'Method ''pos'' does not have ''test_'' prefix'
+      FilePath:        '/home/ivanmurashko/works/myown/clangbook/src/part2/ch7/TestClassSmall.cpp'
+      FileOffset:      50
+      Replacements:    []
+    Notes:
+      - Message:         'insert ''test_'''
+        FilePath:        '/home/ivanmurashko/works/myown/clangbook/src/part2/ch7/TestClassSmall.cpp'
+        FileOffset:      50
+        Replacements:
+          - FilePath:        '/home/ivanmurashko/works/myown/clangbook/src/part2/ch7/TestClassSmall.cpp'
+            Offset:          50
+            Length:          0
+            ReplacementText: test_
+    Level:           Warning
+    BuildDirectory:  '/home/ivanmurashko/works/myown/clangbook'
+  - DiagnosticName:  misc-methodrename
+    DiagnosticMessage:
+      Message:         'Method call ''pos'' does not have ''test_'' prefix'
+      FilePath:        '/home/ivanmurashko/works/myown/clangbook/src/part2/ch7/TestClassSmall.cpp'
+      FileOffset:      101
+      Replacements:    []
+    Notes:
+      - Message:         'insert ''test_'''
+        FilePath:        '/home/ivanmurashko/works/myown/clangbook/src/part2/ch7/TestClassSmall.cpp'
+        FileOffset:      101
+        Replacements:
+          - FilePath:        '/home/ivanmurashko/works/myown/clangbook/src/part2/ch7/TestClassSmall.cpp'
+            Offset:          101
+            Length:          0
+            ReplacementText: test_
+    Level:           Warning
+    BuildDirectory:  '/home/ivanmurashko/works/myown/clangbook'
+...
