@@ -1,0 +1,20 @@
+module fib_constexpr {
+  header "fib_constexpr.h"
+  export *
+}
+module fib_template {
+  header "fib_template.h"
+  export *
+}
+module header1 {
+  header "header1.h"
+  export *
+}
+module header2 {
+  header "header2.h"
+  export *  
+}
+module header3 {
+  header "header3.h"
+  export *  
+}

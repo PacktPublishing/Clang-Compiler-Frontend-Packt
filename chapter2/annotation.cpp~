@@ -1,4 +1,0 @@
-namespace clangbook {
-template <typename T> class A {};
-} // namespace clangbook
-auto a = clangbook::A<int>();
