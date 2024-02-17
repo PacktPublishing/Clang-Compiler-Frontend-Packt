@@ -1,6 +1,6 @@
 #!/bin/sh
 ./cleanup.sh
-export LLVM_SRC=`pwd`/../../../../llvm-project-16.x
+export LLVM_SRC=`pwd`/../../../llvm-project
 export LLVM_HOME=$LLVM_SRC/install
 export LLVM_BUILD=$LLVM_SRC/build
 
