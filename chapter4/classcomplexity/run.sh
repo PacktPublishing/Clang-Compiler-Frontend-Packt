@@ -1,2 +1,3 @@
 #!/bin/bash
-../../../llvm-project/install/bin/clang -Xclang -load -Xclang ./build/libClassComplexityChecker.so -Xclang -plugin -Xclang class-complexity-checker -fsyntax-only simple_test.cpp
+../../../llvm-project/install/bin/clang -fsyntax-only -fplugin=./build/libclasschecker.so ./test/simple_test.cpp
+../../../llvm-project/install/bin/clang -fsyntax-only -fplugin-arg-classchecker-threshold=2 -fplugin=./build/libclasschecker.so test.cpp
