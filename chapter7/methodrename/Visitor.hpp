@@ -12,7 +12,7 @@ public:
       return true;
     if (!Class->isThisDeclarationADefinition())
       return true;
-    if (!Class->getName().startswith("Test"))
+    if (!Class->getName().starts_with("Test"))
       return true;
     for (const clang::CXXMethodDecl *Method : Class->methods()) {
       clang::SourceLocation StartLoc = Method->getLocation();
@@ -25,7 +25,7 @@ public:
   bool VisitCXXMemberCallExpr(clang::CXXMemberCallExpr *Call) {
     if (clang::CXXMethodDecl *Method = Call->getMethodDecl()) {
       clang::CXXRecordDecl *Class = Method->getParent();
-      if (!Class->getName().startswith("Test"))
+      if (!Class->getName().starts_with("Test"))
         return true;
       clang::SourceLocation StartLoc = Call->getExprLoc();
       return processMethod(Method, StartLoc, "Renamed method call");
@@ -47,7 +47,7 @@ private:
       return true;
     if (llvm::isa<clang::CXXConstructorDecl>(Method))
       return true;
-    if (!Method->getIdentifier() || Method->getName().startswith("test_"))
+    if (!Method->getIdentifier() || Method->getName().starts_with("test_"))
       return true;
 
     std::string OldMethodName = Method->getNameAsString();
