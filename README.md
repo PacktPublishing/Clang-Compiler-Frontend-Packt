@@ -1,6 +1,6 @@
 # Clang Compiler Frontend
 
-<a href="https://www.packtpub.com/product/clang-compiler-frontend/9781837630981?utm_source=github&utm_medium=repository&utm_campaign=9781837630981"><img src="https://m.media-amazon.com/images/I/81hGPsSEeHL._SL1500_.jpg" alt="Clang Compiler Frontend" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/product/clang-compiler-frontend/9781837630981"><img src="https://m.media-amazon.com/images/I/81hGPsSEeHL._SL1500_.jpg" alt="Clang Compiler Frontend" height="256px" align="right"></a>
 
 This is the code repository for [Clang Compiler Frontend](https://www.packtpub.com/product/clang-compiler-frontend/9781837630981?utm_source=github&utm_medium=repository&utm_campaign=9781837630981), published by Packt.
 
@@ -43,8 +43,6 @@ With the following software and hardware list you can run all code files present
 | 1-8 | Ninja | Mac OS X,  Linux (Any Unix-like OS) |
 | 1-8 | CMake | Mac OS X,  Linux (Any Unix-like OS) |
 | 1-8 | Git | Mac OS X,  Linux (Any Unix-like OS) |
-
-We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it]().
 
 ### Related products
 * LLVM Techniques, Tips, and Best Practices Clang and Middle-End Libraries [[Packt]](https://www.packtpub.com/product/llvm-techniques-tips-and-best-practices-clang-and-middle-end-libraries/9781838824952?utm_source=github&utm_medium=repository&utm_campaign=9781838824952) [[Amazon]](https://www.amazon.com/dp/1838824952)
