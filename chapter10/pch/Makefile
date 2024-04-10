@@ -1,23 +1,24 @@
-# header1.pch: header1.h
-# 	clang++ -x c++-header header1.h -o header1.pch 
-# header2.pch: header2.h
-# 	clang++ -x c++-header header2.h -o header2.pch -include-pch header1.pch 
+# header.pch: header.h
+# 	clang++ -x c++-header header.h -o header.pch 
 
 
 HEADERS=$(wildcard ./*.h)
 PCHS=$(HEADERS:.h=.pch)
+CLANG=../../../../llvm-project/install/bin/clang
+
 %.pch: %.h
-	clang -x c++-header $< -o $@
-
-
+	$(CLANG) -cc1 -emit-pch -x c++-header $< -o $@
 
 pch: $(PCHS)
 
-exe: main.cpp
-	clang -include-pch header1.pch -include-pch header2.pch main.cpp -o main -lstdc++
+main.o: main.cpp pch
+	$(CLANG) -cc1 -emit-obj -include-pch header.pch main.cpp -o main.o
+
+exe: main.o
+	$(CLANG) main.o -o main -lstdc++
 
 exenopch: main.cpp
-	clang++ main.cpp -o main -lstdc++
+	$(CLANG) main.cpp -o main -lstdc++
 
 
 all: pch exe

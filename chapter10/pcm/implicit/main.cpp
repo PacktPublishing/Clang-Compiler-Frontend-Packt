@@ -1,6 +1,8 @@
 #include "header1.h"
+#include "header2.h"
 
 int main() {
-  int h = h1 + h2;
+  foo1();
+  foo2();
   return 0;
 }

@@ -1,10 +1,6 @@
-// test pchs
-
-#include "header1.h"
-#include "header2.h"
+#include "header.h"
 
 int main() {
-  foo1();
-  foo2();
+  foo();
   return 0;
 }
