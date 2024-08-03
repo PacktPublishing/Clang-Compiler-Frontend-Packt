@@ -19,7 +19,7 @@ public:
         clang::DiagnosticsEngine &D = Context->getDiagnostics();
         unsigned DiagID =
             D.getCustomDiagID(clang::DiagnosticsEngine::Warning,
-                              "class %0 is too complex: method count = %1");
+                              "class %1 is too complex: method count = %2");
         clang::DiagnosticBuilder DiagBuilder =
             D.Report(Declaration->getLocation(), DiagID);
         DiagBuilder << Declaration->getName() << MethodCount;
