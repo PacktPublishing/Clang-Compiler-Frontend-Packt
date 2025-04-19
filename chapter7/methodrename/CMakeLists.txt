@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.16)
 project("methodrename")
 
+# Set C++ standard to C++17
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 if ( NOT DEFINED ENV{LLVM_HOME})
   message(FATAL_ERROR "$LLVM_HOME is not defined")
 else()
